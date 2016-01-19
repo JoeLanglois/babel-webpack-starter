@@ -1,58 +1,28 @@
 {
-  "name": "mithril-app",
-  "version": "0.0.1",
-  "description": "mithril.js app",
-  "main": "server.js",
-  "engines": {
-    "node": ">=4.0.0"
+  "name": "heracles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.4.0",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "webpack": "^1.12.11",
+    "webpack-dev-server": "^1.14.1"
   },
   "scripts": {
-    "postinstall": "jspm install",
-    "precommit": "npm test",
-    "pretest": "node_modules/.bin/standard",
-    "start": "node server",
-    "test": "node run-tests",
-    "build": "jspm bundle app --inject --minify"
+    "start": "webpack-dev-server --content-base public",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:capaj/jspm-mithril.git"
+    "url": "git+https://github.com/capaj/jspm-mithril.git"
   },
-  "author": "capajj@gmail.com",
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/capaj/jspm-mithril/issues"
   },
-  "homepage": "https://github.com/capaj/jspm-mithril",
-  "jspm": {
-    "directories": {
-      "baseURL": "public"
-    },
-    "dependencies": {
-      "capaj/systemjs-hot-reloader": "github:capaj/systemjs-hot-reloader@^0.5.0",
-      "mithril": "npm:mithril@^0.2.0"
-    },
-    "devDependencies": {
-      "babel": "npm:babel-core@^5.8.24",
-      "babel-runtime": "npm:babel-runtime@^5.8.24",
-      "core-js": "npm:core-js@^1.1.4"
-    }
-  },
-  "dependencies": {
-    "http-server": "^0.8.5",
-    "chokidar-socket-emitter": "^0.3.0"
-  },
-  "devDependencies": {
-    "babel": "^5.8.23",
-    "chai": "^3.3.0",
-    "glob": "^5.0.15",
-    "husky": "^0.10.1",
-    "jsdom": "^6.5.1",
-    "mocha": "^2.3.3",
-    "standard": "^5.3.1"
-  },
-  "standard": {
-    "ignore": [
-      "public/config.js"
-    ]
-  }
+  "homepage": "https://github.com/capaj/jspm-mithril#readme"
 }
